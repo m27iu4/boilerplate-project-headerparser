@@ -24,7 +24,7 @@ app.get('/api/whoami', function (req, res) {
   const env = process.env;
   const language = env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES;
   
-  res.json({ 
+  res.json({
     ipaddress: req.ip,
     language: req.headers['accept-language'],
     software: req.headers['user-agent']
